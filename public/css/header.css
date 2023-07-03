@@ -1,0 +1,42 @@
+.header{
+    padding-bottom: 1px;
+    text-align: center;
+    background-color: var(--colorAmarillo);
+    
+}
+
+.header_cont_logo{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.header_logo{
+    width: 45%;
+    padding-top: 24px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+}
+
+.header_titulo_presentacion{
+    text-align: center;
+}
+.header_nav{
+    text-align: left;
+}
+
+.header_nav ul{
+    margin-bottom: 15px;
+}
+
+.burger-menu{
+    background-color: var(--colorCeleste);
+    width: 34px;
+    height: 34px;
+    margin: 0 auto 30px;
+    display: block;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: var(--colorGrisClaro);
+    padding: 4px 4px 3px;
+    font-size: 25px;
+}
