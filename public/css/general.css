@@ -16,13 +16,14 @@
 
 *{
     block-size: border-box;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 
 body {
     font-family:  Roboto;
     font-size: var(--tamanioCuerposDeTexto);
+    background-color: var(--colorGrisClaro);
 }
 
 a{
@@ -32,6 +33,7 @@ a{
 
 h1{
     font-size: var(--tamanioTitulares);
+    color: var(--colorGrisOscuro);
 }
 
 .precio{
