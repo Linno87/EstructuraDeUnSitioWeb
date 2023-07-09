@@ -31,20 +31,13 @@
 }
 .header_nav {
   text-align: left;
-  display: none;
 }
 
 .header_nav ul {
   margin-bottom: 15px;
 }
 
-.header_cont_banner{
-    background-color: var(--colorGrisClaro);
-}
 
-.header_cont_banner img{
-   width: 100%;
-}
 
 .burger-menu {
   background-color: var(--colorCeleste);
@@ -59,20 +52,3 @@
   font-size: 25px;
 }
 
-@media (min-width: 361px) {
-  .header_nav {
-    display: block;
-  }
-  .burger-menu {
-    display: none;
-  }
-}
-
-@media (min-width: 769px) {
-  .header_nav {
-    display: block;
-  }
-  .burger-menu {
-    display: none;
-  }
-}
