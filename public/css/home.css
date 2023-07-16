@@ -1,57 +1,63 @@
-.main{
-    width: 90%;
-    margin: 0px 5%;
+.main {
+  width: 90%;
+  margin: 0px 5%;
 }
 
-.main_sect_ultima_visita_articulo{
-    margin-bottom: 10px;
-    background-color: white;
+.main_sect_ultima_visita_articulo {
+  margin-bottom: 10px;
+  background-color: white;
 }
 
-.main_sect_productos_ultima_visita_titulo{
-    margin: 10px 0;
+.main_sect_productos_ultima_visita_titulo {
+  margin: 10px 0;
 }
-.main_sect_ofertas_titulo{
-    margin: 10px 0;
-}
-
-.main_sect_ultima_visita_articulo_img{
-    width: 100%;
+.main_sect_ofertas_titulo {
+  margin: 10px 0;
 }
 
-.main_sect_productos_box_precio{
+.main_sect_ultima_visita_articulo_img {
+  width: 100%;
+}
+.main_sect_ultima_visita_articulo i {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.main_sect_productos_box_precio {
+    display: flex;
     border-top: solid 1px #ebebeb;
     padding: 15px;
-
 }
-.main_sect_productos_box_precio i{
-    color:var(--colorVerde);
-    width: 22px;
-    height: 22px;
-    border: solid 1px;
-    padding: 7px 10px 10px 7px;
-    border-radius: 50%;
+.main .precio{
+    width: 30%;
+}
+.main .descuento{
+    width: 70%;
 }
 
-.main .descripcion{
-    display: none;
+.main .descripcion {
+  display: none;
 }
-
-
-
 
 @media (min-width: 361px) {
-    .main .descripcion{
-        display: block;
-    }
+  .main .descripcion {
+    display: block;
+  }
 }
 
-@media (min-width:769px){
-    .main .descripcion{
-        display: block;
-    }
-    .main{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    
+@media (min-width: 769px) {
+  .main .descripcion {
+    display: block;
+  }
+  .main {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
 }
