@@ -33,6 +33,12 @@
     width: 20%;
     display: block;
 }
+.register_formulario_btn{
+    background-color: var(--colorCeleste);
+    padding: 5px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
 
 @media (min-width: 361px) {
     .register_main{
