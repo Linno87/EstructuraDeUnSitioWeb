@@ -1,0 +1,42 @@
+.register_main{
+    margin: 0px 5px;
+}
+
+.register_main_formulario{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--colorGrisOscuro);
+    opacity: 24%;
+    color: var(--colorGrisClaro);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.register_formulario{
+    padding: 6px;
+    width: 100%;
+    display: block;
+}
+.register_main_formulario--box{
+    width: 100%;
+    padding: 5px;
+}
+.register_main_formulario--box--tipo{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 6px;
+}
+
+.register_formulario--interes{
+    width: 20%;
+    display: block;
+}
+
+@media (min-width: 361px) {
+    .register_main{
+        width: 75%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,30 @@
+.login_main_formulario{
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--colorGrisOscuro);
+    
+    color: var(--colorGrisClaro);
+    text-align: center;
+}
+
+.login_formulario{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.login_formulario_btn{
+    background-color: var(--colorCeleste);
+    padding: 5px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 361px) {
+    .login_main{
+        width: 75%;
+        margin: 0 auto;
+    }
+}

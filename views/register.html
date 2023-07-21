@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/5f15a2e59f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <title>Registro</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header_cont_logo">
+          <div class="header_cont_logo_barra">
+  
+            <a href="/"><img
+              class="header_logo"
+              src="/images/logo-mercado-liebre.svg"
+              alt="Logo_mercadoliebre"
+            /></a>
+            <form class="header_busqueda" action="/home" method="POST">
+              <input
+                class="header_busqueda_barra"
+                type="search"
+                placeholder="Buscar producto, marcas "
+              />
+              <buttom class="header_boton_busqueda"
+                ><i class="fas fa-search"></i
+              ></buttom>
+            </form>
+          </div>
+  
+          <h4 class="header_titulo_presentacion">
+            <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+            de crédito</h4>
+        </div>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresá <i class="fas fa-sign-out-alt"></i></a>
+            </li>
+            <li>
+              <a href="">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </li>
+          </ul>
+        </nav>
+        
+          <i class="fas fa-bars burger-menu"></i>
+        
+        
+      </header>
+      <main class="register_main">
+        <form class="register_main_formulario" action="/" method="GET">
+             <p class="register_formulario">
+                <input type="text"  id="nombre" name="nombre" value="Nombre completo..."/>
+             </p>
+              <p class="register_formulario">
+                <input type="text"  value="Nombre de usuario"/>
+              </p>
+             <p class="register_formulario">
+                <input type="date" />
+            </p>
+             <p class="register_formulario">
+                <input type="text"  value="Domicilio"/>
+            </p>
+             <p class="register_formulario">
+                <input type="radio" class="register_formulario--tipo" name="tipoUsuario" checked/> Vendedor
+                <input type="radio" class="register_formulario--tipo" name="tipoUsuario"/> Comprador
+            </p>
+            
+             <p class="register_formulario">
+                <label for="interes">Categorías de interes</label>
+                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Electro
+                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Moda
+                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Hogar
+                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Juguetería
+                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Vida sana
+            </p>
+             <p class="register_formulario">
+                <label for="foto_usuario">Foto de perfil</label>
+                <input type="file" class="register_formulario" id="foto_usuario" accept="jpg" name="foto_usuario"/> 
+            </p>
+             <p >
+                <label for="contrasenia">Ingrese contraseña</label>
+                <input type="password" class="register_formulario" id="contrasenia" name="contrasenia"/>
+                <label for="contrasenia">Confirme contraseña</label>
+                <input type="password" class="register_formulario" id="contrasenia" name="contrasenia"/>
+            </p>
+            
+            
+             <p class="register_formulario">
+                <input type="reset" class="register_formulario_btn" value="Cancelar" />
+                <input type="submit" class="register_formulario_btn" value="Aceptar"/>
+            </p>
+            
+        </form>
+      </main>
+      <footer class="footer">
+        <ul class="footer_list">
+          <li>
+            <i class="fas fa-credit-card"></i>
+            <h2>Pagá con tarjeta o en efectivo</h2>
+            <p>
+              Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+              efectivo en puntos de pago. ¡Y siempre es seguro!
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-gift"></i>
+            <h2>Envío gratis desde $ 2.500</h2>
+            <p>
+              Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+              miles de productos. Es un beneficio de Mercado Puntos
+            </p>
+          </li>
+          <li>
+            <i class="fas fa-user-shield"></i>
+            <h2>Seguridad, de principio a fin</h2>
+            <p>
+              ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+              puedas hacer, porque estás siempre protegid@.
+            </p>
+          </li>
+        </ul>
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </footer>
+
+    
+</body>
+</html>
