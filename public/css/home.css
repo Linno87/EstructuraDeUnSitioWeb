@@ -30,26 +30,53 @@
   position: absolute;
   right: 20px;
   top: -15px;
+  color:var(--colorVerde)
 }
 .main_sect_productos_box_precio {
-    display: flex;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
+  border-top: solid 1px #ebebeb;
+  padding: 15px;
+  position: relative;
 }
-.main .precio{
-    width: 30%;
-}
-.main .descuento{
-    width: 70%;
+.main_sect_productos_box_precio_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2%;
 }
 
 .main .descripcion {
   display: none;
 }
+.main .descuento {
+  color: var(--colorVerde);
+  width: 70%;
+  font-size: var(--tamanioDescuentos);
+  text-transform: uppercase;
+}
+.main .precio{
+    width: 30%;
+    font-size: var(--tamanioPrecios);
+}
 
 @media (min-width: 361px) {
   .main .descripcion {
     display: block;
+    padding: 9px 0px;
+  }
+  .main_sect_ultima_visita {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main_sect_ofertas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main .main_sect_ultima_visita_articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 48%;
   }
 }
 
@@ -57,7 +84,22 @@
   .main .descripcion {
     display: block;
   }
-  .main {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .main_sect_ultima_visita {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
+  .main_sect_ofertas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main .main_sect_ultima_visita_articulo {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 23%;
+    height: auto;
+  }
+  .header_titulo_presentacion{
+    flex-wrap: wrap;
+    }
 }

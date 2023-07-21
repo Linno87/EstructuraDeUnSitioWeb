@@ -15,7 +15,7 @@
 }
 
 *{
-    block-size: border-box;
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
@@ -36,14 +36,9 @@ h1{
     color: var(--colorGrisOscuro);
 }
 
-.precio{
-    font-size: var(--tamanioPrecios);
-}
-.decuento{
-    font-size: var(--tamanioDescuentos);
-}
 .descripcion{
     font-size: var(--tamanioDescripciones);
+    color: var(--colorGrisOscuro);
 }
 
 body ul{

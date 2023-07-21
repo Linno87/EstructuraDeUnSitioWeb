@@ -5,29 +5,42 @@
 }
 
 .header_cont_logo {
-  margin-left: 20px;
   margin-bottom: 20px;
-  text-align: left;
+  width: 100%;
+  margin-right: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+.header_cont_logo_barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
 }
 .header_logo {
-  width: 45%;
-  padding-top: 24px;
-  padding-bottom: 12px;
-  padding-left: 14px;
+  width: 50%;
 }
 .header_busqueda{
-    display: inline-block;
+  width: 50%;
 }
-.header_boton_busqueda {
-  background-color: var(--colorGrisClaro);
-  border: solid 1px black;
-  margin-left: 5px;
-  width: 16px;
+.header_busqueda_barra{
+  width: 80%;
+  margin-right: 0;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+}
+.header_boton_busqueda{
+  color: var(--colorGrisOscuro);
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+  margin-left: -19px;
   padding: 1px;
 }
+
 .header_titulo_presentacion {
   text-align: center;
-  padding: 10px 0;
 }
 .header_nav {
   text-align: left;
@@ -52,27 +65,65 @@
   height: 34px;
   margin: 0 auto 25px;
   display: block;
-  font-size: 2rem;
   border-radius: 5px;
   color: var(--colorGrisClaro);
-  padding: 4px 4px 3px;
+  padding: 4px;
   font-size: 25px;
+  text-align: center;
 }
 
 @media (min-width: 361px) {
   .header_nav {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_nav ul{
+    display: flex;
+    gap: 1rem;
+    padding: 0px 9px;
   }
   .burger-menu {
     display: none;
+  }
+  .header_boton_busqueda {
+    background-color: white;
+    border: none;
+    margin-left: -21px;
+    width: 10%;
+    padding: 1px;
+    font-size: 14px;
+  }
+  .header_cont_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .header_titulo_presentacion{
+    width: 40%;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  .header_cont_logo_barra{
+    width: 60%;
   }
 }
 
 @media (min-width: 769px) {
   .header_nav {
-    display: block;
+    display: flex;
+    padding-top: 10px;
+    font-size: 1rem;
   }
   .burger-menu {
     display: none;
+  }
+  .header_boton_busqueda {
+    margin-left: -26px;
+    width: 10%;
+    padding: 1px;
+  }
+  .header_titulo_presentacion{
+    font-size: 1rem;
   }
 }
