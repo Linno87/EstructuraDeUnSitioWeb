@@ -74,34 +74,37 @@
              <p class="register_formulario">
                 <input type="text"  value="Domicilio"/>
             </p>
-             <p class="register_formulario">
-                <input type="radio" class="register_formulario--tipo" name="tipoUsuario" checked/> Vendedor
-                <input type="radio" class="register_formulario--tipo" name="tipoUsuario"/> Comprador
+             <p class="register_formulario box_radio">
+              <label for="tipuUsuario">Tipo de usuario</label>
+              <input type="radio"  name="tipoUsuario" checked/> Vendedor
+              <input type="radio"  name="tipoUsuario"/> Comprador
             </p>
             
-             <p class="register_formulario">
+             <p class="register_formulario box_check">
                 <label for="interes">Categorías de interes</label>
-                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Electro
-                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Moda
-                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Hogar
-                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Juguetería
-                <input type="checkbox" class="register_formulario--interes"  name="interes"/>Vida sana
+                <label><input type="checkbox"   name="interes"/>Electro</label>
+                <label><input type="checkbox"   name="interes"/>Moda</label>
+                <label><input type="checkbox"   name="interes"/>Hogar</label>
+                <label><input type="checkbox"   name="interes"/>Juguetería</label>
+                <label><input type="checkbox"   name="interes"/>Vida sana</label>
             </p>
              <p class="register_formulario">
                 <label for="foto_usuario">Foto de perfil</label>
-                <input type="file" class="register_formulario" id="foto_usuario" accept="jpg" name="foto_usuario"/> 
+                <input type="file"  id="foto_usuario" accept="jpg" name="foto_usuario"/> 
             </p>
-             <p >
-                <label for="contrasenia">Ingrese contraseña</label>
-                <input type="password" class="register_formulario" id="contrasenia" name="contrasenia"/>
-                <label for="contrasenia">Confirme contraseña</label>
-                <input type="password" class="register_formulario" id="contrasenia" name="contrasenia"/>
-            </p>
-            
-            
              <p class="register_formulario">
-                <input type="reset" class="register_formulario_btn" value="Cancelar" />
-                <input type="submit" class="register_formulario_btn" value="Aceptar"/>
+                <label for="contrasenia">Ingrese contraseña</label>
+                <input type="password"  id="contrasenia" name="contrasenia"/>
+                </p>
+              <p class="register_formulario">
+                <label for="contrasenia">Confirme contraseña</label>
+                <input type="password" id="contrasenia" name="contrasenia"/>
+            </p>
+            
+            
+             <p class="register_formulario box_btn">
+                <input type="reset"  value="Cancelar" />
+                <input type="submit"  value="Aceptar"/>
             </p>
             
         </form>

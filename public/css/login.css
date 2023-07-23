@@ -1,10 +1,15 @@
+.login_main{
+    display: flex;
+    justify-content: center;
+}
+
 .login_main_formulario{
     margin: 5px;
     padding: 5px;
-    background-color: var(--colorGrisOscuro);
-    
-    color: var(--colorGrisClaro);
-    text-align: center;
+    background-color: var(--colorGrisClaro);
+    color: var(
+    --colorGrisOscuro);
+    width: 75%;
 }
 
 .login_formulario{
@@ -14,17 +19,40 @@
     flex-direction: column;
     margin-top: 10px;
 }
+.login_formulario input{
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    margin-top: 5px;
+}
 
 .login_formulario_btn{
     background-color: var(--colorCeleste);
     padding: 5px;
     border-radius: 6px;
     text-transform: uppercase;
+    color: var(--colorGrisClaro);
+}
+.login_formulario_btn input{
+    background-color: var(--colorCeleste);
+    padding: 5px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.login_formulario--btn{
+    text-align: center;
 }
 
 @media (min-width: 361px) {
     .login_main{
         width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 361px) {
+    .login_main{
+        width: 60%;
         margin: 0 auto;
     }
 }
