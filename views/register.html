@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/5f15a2e59f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/css/styles.css"/>
-    <title>Registro</title>
-</head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>MercadoLiebre || Registro</title>
+  </head>
 <body>
     <header class="header">
         <div class="header_cont_logo">
           <div class="header_cont_logo_barra">
   
-            <a href="/"><img
-              class="header_logo"
+            <a class="header_logo" href="/"><img
               src="/images/logo-mercado-liebre.svg"
               alt="Logo_mercadoliebre"
             /></a>
@@ -63,16 +62,16 @@
       <main class="register_main">
         <form class="register_main_formulario" action="/" method="GET">
              <p class="register_formulario">
-                <input type="text"  id="nombre" name="nombre" value="Nombre completo..."/>
+                <input type="text" minlength="3"   id="nombre" name="nombre" value="Nombre completo..." required/>
              </p>
               <p class="register_formulario">
-                <input type="text"  value="Nombre de usuario"/>
+                <input type="text" minlength="3"   value="Nombre de usuario" required/>
               </p>
-             <p class="register_formulario">
+             <p class="register_formulario" >
                 <input type="date" />
             </p>
              <p class="register_formulario">
-                <input type="text"  value="Domicilio"/>
+                <input type="text" minlength="10" value="Domicilio" required/>
             </p>
              <p class="register_formulario box_radio">
               <label for="tipuUsuario">Tipo de usuario</label>
@@ -94,11 +93,12 @@
             </p>
              <p class="register_formulario">
                 <label for="contrasenia">Ingrese contraseña</label>
-                <input type="password"  id="contrasenia" name="contrasenia"/>
+                <input type="password"  id="contrasenia" minlength="8" name="contrasenia" required/>
                 </p>
               <p class="register_formulario">
                 <label for="contrasenia">Confirme contraseña</label>
-                <input type="password" id="contrasenia" name="contrasenia"/>
+                
+                <input type="password" id="contrasenia" minlength="8"  name="contrasenia" required/>
             </p>
             
             

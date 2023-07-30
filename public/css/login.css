@@ -33,6 +33,10 @@
     text-transform: uppercase;
     color: var(--colorGrisClaro);
 }
+
+.login_formulario_btn:hover{
+   background-color: #0022AA;
+}
 .login_formulario_btn input{
     background-color: var(--colorCeleste);
     padding: 5px;

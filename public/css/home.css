@@ -3,13 +3,24 @@
   margin: 0px 5%;
 }
 
+.header_cont_banner{
+  width: 100vw;
+  margin-left: -5%;
+}
+
+.header_cont_banner img{
+  width: 100%;
+}
+
 .main_sect_ultima_visita_articulo {
   margin-bottom: 10px;
   background-color: white;
+  
 }
 
 .main_sect_productos_ultima_visita_titulo {
-  margin: 10px 0;
+  margin: 10px 5px;
+  /* margin: 10px 5%; */
 }
 .main_sect_ofertas_titulo {
   margin: 10px 0;
@@ -32,6 +43,18 @@
   top: -15px;
   color:var(--colorVerde)
 }
+.main_sect_ultima_visita_articulo i:hover {
+  animation: rotate 2s ease;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(-90deg);
+  }
+}
 .main_sect_productos_box_precio {
   border-top: solid 1px #ebebeb;
   padding: 15px;
@@ -45,45 +68,56 @@
   gap: 2%;
 }
 
-.main .descripcion {
+.descripcion {
   display: none;
+  
+ 
 }
 .main .descuento {
   color: var(--colorVerde);
-  width: 70%;
+  width: 30%;
   font-size: var(--tamanioDescuentos);
   text-transform: uppercase;
+  
 }
 .main .precio{
-    width: 30%;
+    width: 70%;
     font-size: var(--tamanioPrecios);
 }
 
 @media (min-width: 361px) {
-  .main .descripcion {
+  .descripcion{ 
     display: block;
-    padding: 9px 0px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+  .main_sect_ultima_visita_articulo:hover .descripcion {
+    height: 20px;
   }
   .main_sect_ultima_visita {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* margin: 0 5%; */
   }
   .main_sect_ofertas {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .main .main_sect_ultima_visita_articulo {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .main_sect_ultima_visita_articulo {
+   
     width: 48%;
+  }
+  .main_sect_ultima_visita_articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 }
 
 @media (min-width: 769px) {
-  .main .descripcion {
-    display: block;
-  }
+
+
   .main_sect_ultima_visita {
     display: flex;
     justify-content: space-between;
@@ -94,12 +128,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .main .main_sect_ultima_visita_articulo {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  .main_sect_ultima_visita_articulo {
     width: 23%;
-    height: auto;
   }
   .header_titulo_presentacion{
     flex-wrap: wrap;
     }
+
+  
 }

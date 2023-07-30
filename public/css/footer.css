@@ -10,10 +10,26 @@
 
 .footer_list li{
     margin-bottom: 30px;
+   
 }
 
 .footer_list li i{
     font-size: 2rem;
     margin-bottom: 10px;
     color: var(--colorCeleste);
+}
+.footer_list li i:hover{
+    
+    color:#1259c34f;
+}
+
+@media (min-width: 769px) {
+    .footer_list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .footer>p{
+        text-align: left;
+    }
 }

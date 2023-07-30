@@ -26,6 +26,9 @@
     padding: 3px;
     border: none;
 }
+.register_formulario input:invalid:required{
+    background-color: rgba(243, 101, 19, 0.432);
+}
 .box_radio{
     display: block;
     padding: 12px;
@@ -69,6 +72,7 @@
     border-radius: 6px;
     text-transform: uppercase;
     color: var(--colorGrisClaro);
+    width: 90px;
 }
 
 .register_main_formulario--box{
